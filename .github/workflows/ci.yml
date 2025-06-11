@@ -45,3 +45,9 @@ jobs:
       - name: Build command-line tool
         run: |
           make kk
+          
+      - name: artifact
+        uses: actions/upload-artifact@v4
+        with:  
+          name: kk
+          path: out/*
